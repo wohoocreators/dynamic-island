@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+   <Button
+       android:id="@+id/grant"
+       android:layout_width="220dp"
+       android:layout_height="54dp"
+       android:checked="false"
+       android:text="Enable Permissions"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.497"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.219" />
+
+   <Button
+       android:visibility="gone"
+       android:id="@+id/donate"
+       android:layout_width="258dp"
+       android:layout_height="51dp"
+       android:backgroundTint="#4CAF50"
+       android:checked="false"
+       android:text="cacac"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.496"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/grant"
+       app:layout_constraintVertical_bias="0.965"
+       tools:ignore="TextContrastCheck" />
+
+   <Button
+       android:id="@+id/reset"
+       android:layout_width="89dp"
+       android:layout_height="58dp"
+       android:layout_marginBottom="4dp"
+       android:backgroundTint="#F44336"
+       android:checked="false"
+       android:text="Reset"
+       app:layout_constraintBottom_toTopOf="@+id/donate"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       tools:ignore="TextContrastCheck" />
+
+   <Switch
+       android:id="@+id/deletefrombar"
+       android:layout_width="300dp"
+       android:layout_height="67dp"
+       android:checked="false"
+       android:text="Don\'t show notifications in default bar. (Not recommended)"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.494"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/grant"
+       app:layout_constraintVertical_bias="0.031"
+       tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+   <SeekBar
+       android:id="@+id/x"
+       android:layout_width="282dp"
+       android:layout_height="23dp"
+       android:max="500"
+       android:min="-500"
+       android:progressTint="#8E6FC5"
+       android:thumbTint="#673AB7"
+       app:layout_constraintBottom_toTopOf="@+id/reset"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.495"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/deletefrombar"
+       app:layout_constraintVertical_bias="0.094" />
+
+   <SeekBar
+       android:id="@+id/x2"
+       android:layout_width="282dp"
+       android:layout_height="23dp"
+       android:max="500"
+       android:min="-500"
+       android:progressTint="#8E6FC5"
+       android:thumbTint="#673AB7"
+       app:layout_constraintBottom_toTopOf="@+id/reset"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.495"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/x"
+       app:layout_constraintVertical_bias="0.025" />
+
+   <SeekBar
+       android:id="@+id/y"
+       android:visibility="invisible"
+       android:layout_width="282dp"
+       android:layout_height="23dp"
+       android:layout_marginBottom="328dp"
+       android:max="300"
+       android:min="-300"
+       android:progressTint="#8E6FC5"
+       android:thumbTint="#673AB7"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.495"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/x"
+       app:layout_constraintVertical_bias="0.522" />
+
+   <SeekBar
+       android:id="@+id/y2"
+       android:layout_width="282dp"
+       android:layout_height="23dp"
+       android:layout_marginBottom="328dp"
+       android:max="300"
+       android:min="-300"
+       android:progressTint="#8E6FC5"
+       android:thumbTint="#673AB7"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.504"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/y"
+       app:layout_constraintVertical_bias="0.0" />
+
+   <SeekBar
+       android:id="@+id/width"
+       android:layout_width="282dp"
+       android:layout_height="23dp"
+       android:max="3000"
+       android:min="0"
+       android:progress="1000"
+       android:progressTint="#8E6FC5"
+       android:thumbTint="#673AB7"
+       app:layout_constraintBottom_toTopOf="@+id/reset"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.495"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/y2"
+       app:layout_constraintVertical_bias="0.194" />
+
+   <SeekBar
+       android:id="@+id/width2"
+       android:layout_width="282dp"
+       android:layout_height="23dp"
+       android:max="3000"
+       android:min="0"
+       android:progress="1000"
+       android:progressTint="#8E6FC5"
+       android:thumbTint="#673AB7"
+       app:layout_constraintBottom_toTopOf="@+id/reset"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.495"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/width"
+       app:layout_constraintVertical_bias="0.059" />
+
+   <SeekBar
+       android:id="@+id/heightclosed"
+       android:layout_width="282dp"
+       android:layout_height="23dp"
+       android:max="3000"
+       android:min="0"
+       android:progress="150"
+       android:progressTint="#8E6FC5"
+       android:thumbTint="#673AB7"
+       app:layout_constraintBottom_toTopOf="@+id/reset"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.495"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/width2"
+       app:layout_constraintVertical_bias="0.43" />
+
+   <SeekBar
+       android:id="@+id/heightopen"
+       android:layout_width="282dp"
+       android:layout_height="23dp"
+       android:max="3000"
+       android:min="0"
+       android:progress="500"
+       android:progressTint="#8E6FC5"
+       android:thumbTint="#673AB7"
+       app:layout_constraintBottom_toTopOf="@+id/reset"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.504"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/heightclosed"
+       app:layout_constraintVertical_bias="0.625" />
+
+   <TextView
+       android:id="@+id/textView"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="X Offsets"
+       app:layout_constraintBottom_toTopOf="@+id/x"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.498"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/deletefrombar"
+       app:layout_constraintVertical_bias="1.0" />
+
+   <TextView
+       android:id="@+id/textView2"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="28dp"
+       android:text="hii"
+       app:layout_constraintBottom_toTopOf="@+id/y"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/x"
+       app:layout_constraintVertical_bias="1.0" />
+
+   <TextView
+       android:id="@+id/textView3"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Overlay widths (increase until sides don\'t crop)"
+       app:layout_constraintBottom_toTopOf="@+id/width"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/y"
+       app:layout_constraintVertical_bias="1.0" />
+
+   <TextView
+       android:id="@+id/textView4"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Overlay height when closed"
+       app:layout_constraintBottom_toTopOf="@+id/heightclosed"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/width"
+       app:layout_constraintVertical_bias="1.0" />
+
+   <TextView
+       android:id="@+id/textView5"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Overlay height when open"
+       app:layout_constraintBottom_toTopOf="@+id/heightopen"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.497"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/heightclosed"
+       app:layout_constraintVertical_bias="1.0" />
+   <com.google.android.gms.ads.AdView
+       android:id="@+id/adView"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="20dp"
+       android:layout_centerInParent="true"
+       ads:adSize="BANNER"
+       ads:adUnitId="ca-app-pub-6850472818552165/9726817833"
+       tools:ignore="MissingConstraints"></com.google.android.gms.ads.AdView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
